@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AndreasDebel.dk</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="shortcut icon" href="/icons and pictures/favicon not animated.ico?v=1" type="image/x-icon" />
+        <link rel="icon" href="/icons and pictures/favicon.ico?v=1" type="image/x-icon" />
+    </head>
+    <body style="margin-left: 60px;">
+<!-- Dropdown button -->
+        <div class="dropdown inline">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="index.html">Forside</a>
+                <a href="40projects.html">40 Projects</a>
+                <a href="#">Projekter</a>
+                <a href="#">Galleri</a>
+            </div>
+        </div>
+        <h1 class="inline positioned">Andreas' helt eget øvedokument</h1>
+        
+<!-- Tekster -->
+        <h2>A hearty welcome</h2>
+        <p>Currently, you find yourself engaged in my personal website which has been created for the mere purpose of my pleasure. Initially, this page will solely serve the function of mediating my rapid increase in web design skills. In the future, I intend that the current site might present my collected works as well as informaiton on how to get into contact with me. Maybe I will even add a timeline of my personal coding journey, an art gallery and some sort of machine that I have coded. Only time will tell. For now I am satisfied with the opening paragraph of my website.</p>
+        <h2>Ligegyldig info</h2>
+        <ol>
+            <li>Smaragder indgår ikke i et fladejern</li>
+            <li>Din farfar havde ingen særlige sygdomme i venstre albue</li>
+            <li>Bogstavet "k" indgår ikke i "fis", men derimod i "fisk"</li>
+        </ol>
+
+<!-- Button: Click Me -->
+        <p>Here is a button for y'all</p>
+        <button onclick="buttonClick()">Click Me</button>
+
+<!-- Billede -->
+        <div class="img-hover-zoom" style="margin: 40px 0px 80px 0px">
+            <a href="https://en.wikipedia.org/wiki/Seville" target="_blank">
+            <img src="Seville-skline.jpg" alt="Farverigt maleri af Sevilla">
+            </a>
+        </div>
+
+<!-- Input formular -->
+        <form id="form_data" action="index.js" method="GET">
+            <label class="block" style="margin-bottom: 20px">
+                An input field accepting text
+                <input type="text" name="user_name" placeholder="write smth" maxlength="15" style="margin-left: 20px" required>
+            </label>
+            <label class="block" style="margin-bottom: 20px;">
+                An input field accepting numbers
+                <input type="number" name="user_age" placeholder="00" min="0" max="99" style="margin-left: 20px">
+            </label>
+            <button onclick="writeNameAndAge()" type="submit" style="margin-left: 530px;">Submit</button>
+            <script src="index.js"></script>
+        </form>
+
+    </body>
+</html>
